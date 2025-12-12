@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-
+import { useState } from "react";
 export default function TaskInput() {
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDate, setTaskDate] = useState("");
@@ -13,10 +12,6 @@ export default function TaskInput() {
       taskDate,
       taskDescription,
     });
-
-    const data = userData;
-
-    setUserData(data);
 
     setTaskTitle("");
     setTaskDate("");

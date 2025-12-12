@@ -1,6 +1,5 @@
 import Footer from "./components/layout/Footer.jsx";
 import Header from "./components/layout/Header.jsx";
-import CLockWidget from "./components/Widgets/ClockWidget.jsx";
 import TaskInput from "./components/Tasks/TaskInput.jsx";
 import TaskList from "./components/Tasks/TaskList.jsx";
 
@@ -10,7 +9,7 @@ export default function App() {
       <div className="w-full">
         <Header />
       </div>
-      <div className="my-3 w-1/2 flex bg-gray-700 rounded-2xl">
+      <div className="my-3 flex bg-gray-700 rounded-2xl w-full md:w-auto">
         <TaskInput />
       </div>
       <div className="bg-gray-700 my-3 rounded-2xl w-full">
