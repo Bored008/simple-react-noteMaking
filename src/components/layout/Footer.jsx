@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="p-4 text-white">
-      <h1>Footer placeHolder</h1>
+    <div className="text-center text-slate-500 text-sm p-4 border-t border-slate-800 mt-4">
+      <p>Mission Control Dashboard • Built with React</p>
     </div>
   );
 }
