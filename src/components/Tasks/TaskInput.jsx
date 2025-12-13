@@ -107,6 +107,7 @@ export default function TaskInput() {
           </div>
         </form>
       </div>
+      <img src="locked-in-study.gif" />
       <div className=" my-3 bg-gray-700 rounded-2xl p-4">
         <h1 className="text-2xl text-white font-bold mb-4">Your Task List -</h1>
         <ul>{newTask}</ul>
