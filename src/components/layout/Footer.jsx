@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="text-center text-white text-sm p-4 border-slate-800">
       <p>Mission Control Dashboard • Built with React</p>
       <p className="">
-        connect with me :
+        Connect with me :
         <a
           className="pl-2"
           href="https://www.linkedin.com/in/himanshuakabored/"
