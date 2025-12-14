@@ -14,7 +14,7 @@ export default function Header() {
     <div className="bg-gray-700 text-white text-center rounded-2xl">
       <h1 className="p-2.5 text-2xl font-bold text-emerald-600">
         Keep Checking the time because{" "}
-        <span className="text-3xl text-red-800"> Time is crucial </span>
+        <span className="text-3xl text-red-600"> Time is crucial </span>
       </h1>
       <h1 className="pb-2.5 text-2xl font-bold text-emerald-600">
         {date} | {time}
