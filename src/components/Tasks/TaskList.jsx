@@ -18,10 +18,8 @@ export default function TaskList({ mainTask, setMainTask }) {
 
   const clearAll = () => {
     if (showCompleted) {
-      // Clear all completed tasks, keep active ones
       setMainTask(mainTask.filter((t) => !t.completed));
     } else {
-      // Clear all active tasks, keep completed ones
       setMainTask(mainTask.filter((t) => t.completed));
     }
   };
@@ -109,7 +107,7 @@ export default function TaskList({ mainTask, setMainTask }) {
           onClick={() => {
             clearAll();
           }}
-          className="absolute right-0 text-xl text-white font-bold mb-2 mr-3 bg-red-500 rounded-2xl p-2 px-3"
+          className="absolute right-0 text-xl text-white font-bold mb-2 mr-1 bg-red-500 rounded-2xl p-2 px-3"
         >
           Clear All
         </button>
