@@ -64,7 +64,7 @@ export default function TaskList({ mainTask, setMainTask }) {
               onClick={() => {
                 deleteHandler(t.originalIndex);
               }}
-              className="m-2 bg-red-500 rounded-xl p-2 text-white text-l font-semibold"
+              className="m-2 bg-red-500 rounded-xl p-2 text-white text-l font-semibold "
             >
               Delete
             </button>
@@ -86,28 +86,30 @@ export default function TaskList({ mainTask, setMainTask }) {
 
   return (
     <div className=" my-3 bg-gray-700 rounded-2xl p-4">
-      <div className="relative ml-3 flex gap-4">
-        <button
-          onClick={() => setShowCompleted(false)}
-          className={`text-2xl text-white font-bold mb-2 rounded-2xl p-2 px-3 ${
-            !showCompleted ? "bg-emerald-800 border-2 border-white" : "bg-emerald-600"
-          }`}
-        >
-          Task List
-        </button>
-        <button
-          onClick={() => setShowCompleted(true)}
-          className={`text-2xl text-white font-bold mb-2 rounded-2xl p-2 px-3 mr-90 ${
-            showCompleted ? "bg-emerald-800 border-2 border-white" : "bg-emerald-600"
-          }`}
-        >
-          Completed Task
-        </button>
+      <div className="ml-3 gap-2 flex justify-between items-center flex-wrap">
+        <div className="flex gap-2 flex-wrap">
+          <button
+            onClick={() => setShowCompleted(false)}
+            className={`text-2xl text-white font-bold mb-2 rounded-2xl p-2 px-3 ${
+              !showCompleted ? "bg-emerald-800 border-2 border-white" : "bg-emerald-600"
+            }`}
+          >
+            Task List
+          </button>
+          <button
+            onClick={() => setShowCompleted(true)}
+            className={`text-2xl text-white font-bold mb-2 rounded-2xl p-2 px-3 ${
+              showCompleted ? "bg-emerald-800 border-2 border-white" : "bg-emerald-600"
+            }`}
+          >
+            Completed Task
+          </button>
+        </div>
         <button
           onClick={() => {
             clearAll();
           }}
-          className="absolute right-0 text-xl text-white font-bold mb-2 mr-1 bg-red-500 rounded-2xl p-2 px-3"
+          className="text-xl text-white font-bold mb-2 bg-red-500 rounded-2xl p-2 px-3"
         >
           Clear All
         </button>
