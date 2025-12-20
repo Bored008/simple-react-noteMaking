@@ -20,14 +20,14 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen pb-12 font-['Inter']">
+    <div className="min-h-screen pb-6 sm:pb-12 font-['Inter']">
       <Header />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 space-y-8 animate-fade-in">
         <section className="w-full">
           <TaskInput />
         </section>
         <section className="w-full">
-          <footer className="glass rounded-2xl overflow-hidden mt-12">
+          <footer className="glass rounded-2xl overflow-hidden mt-6 sm:mt-12">
             <Footer />
           </footer>
         </section>

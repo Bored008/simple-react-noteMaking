@@ -23,7 +23,7 @@ export default function Welcome() {
                         Welcome Abroad
                     </h2>
                     <p className="text-gray-400 font-medium">
-                        What should we call your productivity suite?
+                        What should we call your workspace?
                     </p>
                 </div>
 
@@ -33,7 +33,7 @@ export default function Welcome() {
                             type="text"
                             value={nameInput}
                             onChange={(e) => setNameInput(e.target.value)}
-                            placeholder="Enter your name or suite title"
+                            placeholder="Enter your name or workspace title"
                             className="w-full bg-white/5 border border-white/10 text-white rounded-2xl px-6 py-5 outline-none focus:border-indigo-500/50 transition-all placeholder:text-gray-600 text-lg font-medium"
                             autoFocus
                             required
